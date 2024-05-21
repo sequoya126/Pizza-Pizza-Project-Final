@@ -3,5 +3,14 @@
   height: 30px;
 }
 #francais{
-  margin-left: -100px;
+  margin-left: 80em;
+}
+.topmilieu {
+  display: flex;
+  flex-direction: row;
+
+}
+#ul1{
+  display: flex;
+  flex-direction: row;
 }
