@@ -1,16 +1,106 @@
+ *{
+  font-family: Avram, sans-serif;
+  color: #4c3017;
+}
+body {
+  font-family: Avram, sans-serif;
+  color: #4c3017;
+}
+header{
+
+}
 .logo img {
   width: 185px;
   height: 30px;
 }
-#francais{
-  margin-left: 80em;
+#topmilieu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
-.topmilieu {
+#spans {
   display: flex;
   flex-direction: row;
+  align-items: center;
 
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.25em;
 }
-#ul1{
+#francais {
+  margin-left: 80em;
+  color: black;
+  text-decoration: underline;
+  
+}
+#spanclub, #spangroup,#spangift {
+  margin-right: 1.25em;
+}
+.AddCoupon {
+ text-align: center;
+  border: 1px solid #000000;
+  background-color: white;
+  width: 8em;
+  height: 2em;
+  padding-top: 1em;
+  border-radius: 0.5em;
+  color: #4c3017;
+}
+
+.AddCoupon:hover {
+  background-color:
+    #d84414;
+  color: white;
+}
+
+.SignIn,
+.CreateAccount {
+  margin-left: 20px;
+  /* Add some spacing between buttons */
+}
+
+.item-list {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-Afficher {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 20em;
+  height: 6em;
+}
+
+.nom-prix-bouton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cart-h4 {
+  margin: 0;
+}
+
+.AjouterAuPanier {
+  background-color: #4CAF50; /* vert */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.items-container{
+  width: 80%;
+  height: 30em;
+  background-color: #b4b4ee;
 }
