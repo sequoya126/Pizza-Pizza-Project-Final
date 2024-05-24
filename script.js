@@ -1,4 +1,39 @@
+// Debut du code JV pour le slideShow
 
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+// Fin du code JV pour le slideShow
+
+
+
+
+// Debut du code JV pour le menu
 let listPanier = document.getElementById('listPanier');
 let total = document.querySelector('.total');
 let totals = document.querySelector('#totals')
@@ -30,28 +65,28 @@ let items = [
         index: 1,
         quan: 0,
         nom: "Create Your Own",
-        image: "ImagesMenu/create_your_own_2.jpg",
+        image: "ImagesMenu/create_your_own_2.png",
         prix: 50
     },
     {
         index: 2,
         quan: 0,
         nom: 'Meat Lover',
-        image: "ImagesMenu/old_school_2.jpg",
+        image: "ImagesMenu/old_school_2.png",
         prix: 150
     },
     {
         index: 3,
         quan: 0,
         nom: 'Veggie Favourites',
-        image: "ImagesMenu/gourme_zas_2.jpg",
+        image: "ImagesMenu/gourmet_zas_2.png",
         prix: 300
     },
     {
         index: 4,
         quan: 0,
         nom: 'Alternative Crust',
-        image: "ImagesMenu/Cauli_Create_your_Own_1(1).jpg",
+        image: "ImagesMenu/test.png",
         prix: 300
     },
 ];
@@ -63,50 +98,22 @@ function AjouterAuPanier(index) {
     localStorage.setItem(panierCoursesKey, JSON.stringify(panierCourses));
     // 
 }
+let itemsContainer = document.querySelector('.items'); // 
+function initItem() {
+    // Clear toutes les autres avant de initializer
+    itemList.innerHTML = '';
 
-// function initItem() {
-//     const totals = document.getElementById('totals');
-//       totals.innerHTML = listStorage.length;
-
-//     for (let i = 0; i < items.length; i++) {
-//         const value = items[i];
-//         const card = document.createElement('div');
-//         card.setAttribute('class', 'item-Afficher');
-//         card.innerHTML = `
-//             <img src="${value.image}" class="card-img-top" alt="...">
-//             <div class="nom-prix-bouton"> 
-//                 <h4 class="cart-h4">${value.nom} ${value.prix}$</h4>
-//                 <button class="AjouterAuPanier" onclick="AjouterAuPanier(${i})">Ajouter au panier</button>
-//             </div>`;
-//         itemList.appendChild(card);
-//     }
-// }
-
-
-// Code du travail3Unite5
-// function initItem() {
-//     totals.innerHTML = listStorage.length;
-//     // Clear any existing items in the display
-//     itemList.innerHTML = '';
-
-//     // Loop through each item and create its representation
-//     for (let i = 0; i < items.length; i++) {
-//         let value = items[i];
-//         let card = document.createElement('div');
-//         card.setAttribute('class', 'item-Afficher');
-//         card.innerHTML = `
-//             <img src="${value.image}" class="card-img-top" alt="...">
-//             <div class="nom-prix-bouton"> 
-//                 <h4 class="cart-h4">${value.nom} ${value.prix}$</h4>
-//                 <button class="AjouterAuPanier" id = "${i}" onclick="AjouterAuPanier(${i}, ${value.index})">Ajouter au panier</button>
-//             </div>`;
-//         // Append the item representation to the items container
-//         itemList.appendChild(card);
-//     //     btns = document.querySelectorAll("AjouterAuPanier")
-//     }
-//     updateTotalCount();
-// }
-// function updateTotalCount(){
-
-// }
-initItem();
+    for (let i = 0; i < items.length; i++) {
+        const value = items[i];
+        const card = document.createElement('div');
+        card.setAttribute('class', 'item-Afficher');
+        card.innerHTML = `
+            <img src="${value.image}" class="card-img-top" alt="...">
+            <div class="nom-prix-bouton"> 
+                <h4 class="cart-h4">${value.nom} ${value.prix}$</h4>
+            </div>
+            <img src="ImagesMenu/BtnAjouter.png" class="BtnAjouter" onclick="AjouterAuPanier(${i})" alt="Ajouter au panier">`;
+        itemList.appendChild(card);
+    }
+}
+// Fin du code JV pour le menu

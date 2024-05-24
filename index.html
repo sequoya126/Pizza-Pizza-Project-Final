@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
-    <title>Pizza Pizza Clone | Projet Final</title>
+    <title>Pizza Pizza | Projet Final</title>
+    <link rel="icon" type="image/x-icon" href="ImagesExtra/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h5 id="francais">Français</h5>
+        <div id="francais">Français</div>
 
         <!--début de top milieu -->
         <div id="topmilieu">
@@ -17,8 +17,8 @@
                 <span id="spangroup">GROUP ORDERING</span>
                 <span id="spanclub">CLUB 11-11</span>
                 <span id="spangift">GIFT CARDS</span>
-                <p id="AddCoupon">ADD Coupon</p>         
             </div>
+            <span id="AddCoupon">ADD Coupon</span>
             <div class="btn-group">
                 <a id="signin" href="/user/sign-in">Sign In</a>
                 <a id="createaccount" href="/user/sign-up">Create Account</a>
@@ -28,8 +28,48 @@
         <div class="logo">
             <img src="Images/Pizza.png" alt="pizza">
         </div>
-        <hr>
     </header>
+    <hr>
+    <!--Section slide show ( Code inspirer par https://www.w3schools.com/howto/howto_js_slideshow.asp)  -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="ImagesSlideShow/SlideShowImage1.PNG" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="ImagesSlideShow/SlideShowImage2.PNG" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="ImagesSlideShow/SlideShowImage3.PNG" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="ImagesSlideShow/SlideShowImage4.PNG" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- SlideShow fini ici  -->
     <div id="items-container">
         <div class="items">
         </div>
@@ -41,11 +81,17 @@
         </div>
         <div id="Menu2"> </div>
     </div>
-    <!--Put here  -->
+    <!--Ici  -->
     <div class="imageTopFooder">
         <img src="ImagesExtra/topfooter.PNG" alt="tpf">
     </div>
 </body>
-<script src="script.js"></script>  
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        initItem(); // Appele la focution ici
+    });
+</script>
 
 </html>
+<
