@@ -1,135 +1,170 @@
 * {
-   font-family: Avram, sans-serif;
-   color: #4c3017;
- }
+  font-family: Avram, sans-serif;
+  color: #4c3017;
+}
 
- body {
-   font-family: Avram, sans-serif;
-   color: #4c3017;
- }
+body {
+  font-family: Avram, sans-serif;
+  color: #4c3017;
+}
 
- .logo img {
-    width: 12em;
-   height: 2.4em;
- }
-header{
-  display : flex;
+.logo img {
+  width: 12em;
+  height: 2.4em;
+  border: 1px solid #4c3017;
+  margin-right: 150px;
+}
+
+header {
+  display: flex;
   flex-direction: column;
   width: 100%;
 }
 
- #francais {
-   margin-left: 90em;
-   margin-bottom: 0.5em;
-   font-size: 0.8em;
-   color: black;
- }
+#francais {
+  margin-left: 120em;
+  margin-bottom: 0.5em;
+  font-size: 0.78em;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  color: #48311b;
 
- #francais:hover {
-   text-decoration: underline;
-   cursor: pointer;
- }
+}
 
- /*-----------------top milieu--------------------*/
- #topmilieu {
-  border: 1px solid #aec00b ;
-   display: flex;
-   flex-direction: row;
-   margin-left: 8em;
-   width: 70em;
-   height: 4em;
- }
- #spans {
-   border: 1px solid #000000 ;
-   display: flex;
-   flex-direction: row;
-   width: 25em;
-   font-weight: 799;
-   padding-top: 0.5em;
-   text-transform: uppercase;
-   text-decoration: none;
-   font-size: 1.25em;
- }
- #spanclub{
-  border: 1px solid #000000 ;
-  width: 5.8em;
-   margin-right: 1em;
-   height: 1em;
- }
- #spangift {
-  border: 1px solid #000000 ;
+#francais:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*-----------------top milieu--------------------*/
+#topmilieu {
+  border: 1px solid #c10b0b;
+  display: flex;
+  flex-direction: row;
+  width: 90em;
+  height: 4em;
+}
+
+#spans {
+  border: 1px solid #094ef1;
+  display: flex;
+  flex-direction: row;
+  width: 25em;
+  font-weight: 799;
+  padding-top: 0.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.25em;
+
+}
+
+#spanclub {
+  border: 1px solid #000000;
+  width: 6em;
+  margin-right: 1em;
+  height: 1em;
+  text-decoration: none;
+}
+
+#spangift {
+  border: 1px solid #000000;
   width: 6.52em;
-   margin-right: 1em;
-   height: 1em;
+  margin-right: 1em;
+  height: 1em;
+  text-decoration: none;
+}
 
- }
- #spangroup {
+#spangroup {
   border: 1px solid #000000;
   width: 10em;
-   margin-right: 1em;
-   height: 1em;
- }
- #divbtn {
-   display: flex;
-   flex-direction: row;
+  margin-right: 1em;
+  height: 1em;
+  text-decoration: none;
+}
 
- }
+#divbtn {
+  display: flex;
+  flex-direction: row;
 
- #AddCoupon {
-   text-align: center;
-   border: 1px solid #000000;
-   background-color: white;
-   width: 10em;
-   height: 2em;
-   padding-left: 0.5em;
-   padding-top: 0.7em;
-    padding-right: 0.5em;
-   border-radius: 0.5em;
-   color: #4c3017;
-   margin-right: 1em;
-   margin-top: 0.2em;
-   margin-bottom: 1.5em;
- }
+}
 
- #AddCoupon:hover {
-   background-color:
-     #d84414;
-   color: white;
-   cursor: pointer;
- }
+#AddCoupon {
+  text-align: center;
+  border: 1px solid #000000;
+  background-color: white;
+  width: 10em;
+  height: 2em;
+  padding: 0.7em 0.5em;
+  border-radius: 0.5em;
+  font-family: Avram, sans-serif;
+  color: #4c3017;
+  margin-right: 1em;
+  margin-top: 0.2em;
+  margin-bottom: 1.5em;
+}
 
- .btn-group {
-   display: flex;
-   flex-direction: column;
-   padding-left: 10em;
- }
+#AddCoupon:hover {
+  background-color:
+    #d84414;
+  color: white;
+  cursor: pointer;
+}
 
- #signin {
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 110px;
+  border: 1px solid #000000;
+  ;
+}
+
+#totalsignin {
+  display: flex;
+  flex-direction: row;
+}
+
+.material-icons {
+  font-size: 2.5em;
+  color: #d54110;
+}
+
+#signin {
   font-size: 0.78em;
   text-decoration: none;
-  font-weight: bold;
-   background-color: white;
-   border: none;
-
- }
- #createaccount {
-  width: 12em;
-  text-decoration: none;
-  font-size:0.9em ;
+  font-weight: 800;
   background-color: white;
   border: none;
- }
- #signin,
- #createaccount:hover {
-   cursor: pointer;
 
- }
+}
 
- /*------------------fin topmilieu -------------------------*/
+#createaccount {
+  width: 12em;
+  text-decoration: none;
+  font-size: 0.9em;
+  background-color: white;
+  border: none;
+}
 
+#signin,
+#createaccount:hover {
+  cursor: pointer;
 
+}
+
+/*------------------fin topmilieu -------------------------*/
+
+#hspecial{
+  font-family: proxima-nova, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #48311b;
+  font-size: 1.5em;
+}
 /* Debut du code css pour le slideshow  */
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -144,7 +179,8 @@ header{
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -166,8 +202,9 @@ header{
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -202,7 +239,8 @@ header{
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -213,21 +251,28 @@ header{
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
+
 /*  Fin du code css pour le slideshow */
 
 
 /* Css pour le menu images  */
- /* Sequoya pas fini touche pas */
+/* Sequoya pas fini touche pas */
 .imageTopff,
- .item-list {
-   display: flex;
-    flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
- }
+.item-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* 
  .item-Afficher {
    margin: 10px;
@@ -237,57 +282,63 @@ header{
    height: 20em;
     border-radius: 2em;
  } */
-.card-img-top{
-   margin: 10px;
-   padding: 10px;
-   border: 1px solid #ccc;
-   width: 9em;
-   height: 15em;
-    border-radius: 2em;
+.card-img-top {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 9em;
+  height: 15em;
+  border-radius: 2em;
 }
 
- .nom-prix-bouton {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   height: 100%;
- }
+.nom-prix-bouton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 
- .cart-h4 {
-   margin: 0;
- }
+.cart-h4 {
+  margin: 0;
+}
 
- .AjouterAuPanier {
-   background-color: #4CAF50;
-   /* vert */
-   border: none;
-   color: white;
-   padding: 8px 16px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   cursor: pointer;
- }
+.AjouterAuPanier {
+  background-color: #4CAF50;
+  /* vert */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
- .items-container {
-    display: flex;
-    flex-direction: row;
-   width: 80%;
-   height: 30em;
-   background-color: #b4b4ee;
- }
+.items-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 30em;
+  background-color: #b4b4ee;
+}
 
 .item-Afficher {
-    display: inline-block; /* Display items in a row */
-    vertical-align: top; /* Align items at the top */
-    margin-right: 20px; /* Add some margin between items */
+  display: inline-block;
+  /* Display items in a row */
+  vertical-align: top;
+  /* Align items at the top */
+  margin-right: 20px;
+  /* Add some margin between items */
 }
 
 .BtnAjouter {
-    width: 30px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer;
+  width: 30px;
+  /* Adjust the width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  cursor: pointer;
 }
+
 /* Fin du code pour les menuImages  */

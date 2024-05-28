@@ -4,35 +4,46 @@
 <head>
     <title>Pizza Pizza | Projet Final</title>
     <link rel="icon" type="image/x-icon" href="ImagesExtra/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <div id="francais">Français</div>
-
         <!--début de top milieu -->
         <div id="topmilieu">
+            <div class="logo">
+                <img src="Images/Pizza.png" alt="pizza">
+            </div>
             <div id="spans">
-                <span id="spangroup">GROUP ORDERING</span>
-                <span id="spanclub">CLUB 11-11</span>
-                <span id="spangift">GIFT CARDS</span>
+                <a id="spangroup" href="2index.html">GROUP ORDERING</a>
+                <a id="spanclub" href="">CLUB 11-11</a>
+               <a id="spangift" href="">GIFT CARDS</a>
             </div>
             <span id="AddCoupon">ADD Coupon</span>
-            <div class="btn-group">
-                <a id="signin" href="/user/sign-in">Sign In</a>
-                <a id="createaccount" href="/user/sign-up">Create Account</a>
+            <div id="totalsignin">
+                <i class="material-icons account_circle
+">account_circle
+                </i>
+                <div class=" btn-group">
+                    <a id="signin" href="/user/sign-in">Sign In</a>
+                    <a id="createaccount" href="/user/sign-up">Create Account</a>
+                </div>
+            </div>
+            <div id="totaldelivery">
+
             </div>
         </div>
         <!--fin de topmilieu  -->
-        <div class="logo">
-            <img src="Images/Pizza.png" alt="pizza">
-        </div>
+
     </header>
     <hr>
+    
     <!--Section slide show ( Code inspirer par https://www.w3schools.com/howto/howto_js_slideshow.asp)  -->
     <div class="slideshow-container">
-
+        <h3 id = "hspecial">FEATURED SPECIALS
+        </h3>
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
