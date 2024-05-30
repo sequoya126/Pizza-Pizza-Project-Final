@@ -134,6 +134,12 @@ header {
   color: #d54110;
 }
 
+.material-icons.home {
+  font-size: 2.5em;
+  color: #d54110;
+  text-decoration: none;
+}
+
 #btn-address {
   display: flex;
   flex-direction: column;
@@ -201,34 +207,52 @@ header {
 
 #blackmsgbox {
   background-color: black;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start; 
+  align-items: center; 
   width: 70%;
   height: 75px;
-  margin-left: 200px;
-  
+  margin: 0 auto; 
+}
+
+#msgmenu {
+  text-align: left; 
+  margin-left: 15px; 
+
 }
 
 #findlocal {
-  margin-left: 10px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   border: 1px solid #ffffff;
   border-radius: 10px;
-  height: 50px;
-  width: 100px;
+  height: 40px;
+  width: 110px;
+   margin-left: 20px;
+  padding: 5px;
+  transition: background-color 0.3s; 
 }
-
 #blackmsgbox p {
   color: white;
-  transition: opacity .15s linear;
 }
 
 #pfind {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
+#findlocal:hover {
+  cursor: pointer;
+  background-color: white; /* Change background color to white on hover */
+}
+
+#findlocal:hover #pfind {
+  color: black; 
+}
+#findlocal:hover .material-icons {
+  color: black; 
+   border: 2px solid black;
+}
 .material-icons.near_me {
   color: white;
   border: 2px solid white;
@@ -236,9 +260,10 @@ header {
   font-size: 10px;
   width: 18px;
   height: 18px;
-  display: inline-flex; /* Display as inline-flex to only take up the space it needs */
-  align-items: center; /* Center the icon vertically */
-  justify-content: center; /* Center the icon horizontally */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+margin-left: 9px;
 }
 
 /* Debut du code css pour le slideshow  */
