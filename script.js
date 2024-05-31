@@ -65,29 +65,85 @@ let items = [
         index: 1,
         quan: 0,
         nom: "Create Your Own",
-        image: "ImagesMenu/create_your_own_2.png",
-        prix: 50
+        image: "ImagesMenu/Image1.PNG",
+       
     },
     {
         index: 2,
         quan: 0,
         nom: 'Meat Lover',
-        image: "ImagesMenu/old_school_2.png",
-        prix: 150
+        image: "ImagesMenu/Image2.PNG",
+     
     },
     {
         index: 3,
         quan: 0,
         nom: 'Veggie Favourites',
-        image: "ImagesMenu/gourmet_zas_2.png",
-        prix: 300
+        image: "ImagesMenu/Image3.PNG",
+    
     },
     {
         index: 4,
         quan: 0,
         nom: 'Alternative Crust',
-        image: "ImagesMenu/test.png",
-        prix: 300
+        image: "ImagesMenu/Image4.PNG",
+       
+    },
+    {
+        index: 5,
+        quan: 0,
+        nom: "Create Your Own",
+        image: "ImagesMenu/Image5.PNG",
+     
+    },
+    {
+        index: 6,
+        quan: 0,
+        nom: 'Meat Lover',
+        image: "ImagesMenu/Image6.PNG",
+     
+    },
+    {
+        index: 7,
+        quan: 0,
+        nom: 'Veggie Favourites',
+        image: "ImagesMenu/Image7.PNG",
+      
+    },
+    {
+        index: 8,
+        quan: 0,
+        nom: 'Alternative Crust',
+        image: "ImagesMenu/Image8.PNG",
+       
+    },
+    {
+        index: 9,
+        quan: 0,
+        nom: "Create Your Own",
+        image: "ImagesMenu/Image9.PNG",
+      
+    },
+    {
+        index: 10,
+        quan: 0,
+        nom: 'Meat Lover',
+        image: "ImagesMenu/Image10.PNG",
+      
+    },
+    {
+        index: 11,
+        quan: 0,
+        nom: 'Veggie Favourites',
+        image: "ImagesMenu/Image11.PNG",
+       
+    },
+    {
+        index: 12,
+        quan: 0,
+        nom: 'Alternative Crust',
+        image: "ImagesMenu/Image12.PNG",
+      
     },
 ];
 let panierCourses = JSON.parse(localStorage.getItem(panierCoursesKey)) || [];
@@ -110,9 +166,9 @@ function initItem() {
         card.innerHTML = `
             <img src="${value.image}" class="card-img-top" alt="...">
             <div class="nom-prix-bouton"> 
-                <h4 class="cart-h4">${value.nom} ${value.prix}$</h4>
+          
             </div>
-            <img src="ImagesMenu/BtnAjouter.png" class="BtnAjouter" onclick="AjouterAuPanier(${i})" alt="Ajouter au panier">`;
+            <img src="" class="BtnAjouter" onclick="(${i})" alt="">`;
         itemList.appendChild(card);
     }
 }
