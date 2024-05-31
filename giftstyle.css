@@ -43,32 +43,33 @@ body {
   width: 60em;
   padding-top: 0.5em;
   color: #4A3019;
-  font-size: 1.05em;
+  font-size: 1em;
   font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-  margin-left: 10em;
+  margin-left: 15em;
   margin-top: 20px;
 }
 
 #plasticgift {
   width: 14em;
-  margin-right: 12em; /* Increased margin */
+  margin-right: 12em;
+  /* Increased margin */
   height: 1em;
   text-decoration: none;
 }
 
 #egift {
   width: 11em;
-  margin-right: 12em; 
+  margin-right: 12em;
   height: 1em;
   text-decoration: none;
 }
 
 #home1 {
   width: 3em;
-  margin-right: 12em; 
+  margin-right: 12em;
   height: 1em;
   text-decoration: none;
 }
@@ -77,11 +78,11 @@ body {
   text-decoration: none;
   height: 1em;
   width: 5.5em;
-  margin-right: 12em; 
+  margin-right: 12em;
 }
 
 .bannerlogo {
-  margin-left: 60px;
+  margin-left: 140px;
   margin-top: 40px;
 }
 
@@ -89,6 +90,10 @@ body {
   height: 280px;
   width: 410px;
   background-color: #d54110;
+}
+
+.ecardlogo img:hover {
+  cursor: pointer;
 }
 
 .cardlogo {
@@ -103,44 +108,75 @@ body {
   background-color: #d54110;
 }
 
-#milieu{
+#milieu {
   display: flex;
   flex-direction: row;
 }
-#pgiftcards{
+
+#pgiftcards {
   text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
 }
-h1{
-  text-align: center;
+
+h1 {
+  color: #48311B;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 2.3em;
   font-weight: 800;
-  font-size: 40px ;
+  text-transform: uppercase;
+  margin: 5px 0 10px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0px;
 }
-#topmilieu{
- margin-top: 20px;
+
+#topmilieu {
+  margin-top: 40px;
+  margin-left: 25px;
 }
-#footerh{
+
+#footerh {
   margin-top: 300px;
   display: flex;
   flex-direction: row;
 }
-#footerh:hover{
-text-decoration: underline;
-}
-#footerp{
+
+#footerp {
   display: flex;
   flex-direction: row;
 }
-#footernum{
- color: #d54110;
+
+#footernum {
+  color: #d54110;
   text-decoration: underline;
 }
-#footernum:hover{
- text-decoration: none;
+
+#footerpriv:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-#footerfaq{
+#footernum:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#footerfaq {
   margin-left: 20px;
 }
-#footerterms{
+
+#footerfaq:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#footerterms {
   margin-left: 20px;
+}
+
+#footerterms:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
