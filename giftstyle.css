@@ -87,8 +87,8 @@ body {
 }
 
 .ecardlogo {
-  height: 280px;
-  width: 410px;
+  height: 276px;
+  width: 409.1px;
   background-color: #d54110;
 }
 
@@ -97,27 +97,29 @@ body {
 }
 
 .cardlogo {
-  height: 280px;
-  width: 410px;
+  height: 276px;
+  width: 409px;
   background-color: #d54110;
 }
 
 .balancelogo {
-  height: 280px;
-  width: 410px;
+  height: 276px;
+  width: 409.1px;
   background-color: #d54110;
 }
 
 #milieu {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 #pgiftcards {
   text-align: center;
   font-size: 20px;
   font-weight: 400;
-  width: 100%;
+  width: 1300px;
+  margin-left: 100px;
 }
 
 h1 {
@@ -132,20 +134,93 @@ h1 {
   letter-spacing: 0px;
 }
 
+h2 {
+  font-weight: 800;
+  font-size: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+.ecardlogo h2 {
+  margin-left: 50px;
+}
+
+.balancelogo h2 {
+  margin-left: 50px;
+}
+
+.cardlogo h2 {
+  margin-left: 50px;
+}
+
+.ecardlogo p {
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+.balancelogo p {
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+.cardlogo p {
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+.ecardlogo img {}
+
+#scbalance {
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+#buyecard{
+  margin-top: 60px;
+  margin-left: 60px;
+}
+#buyplasticcard{
+  margin-top: 60px;
+  margin-left: 60px;
+}
+#footerh h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
 #topmilieu {
   margin-top: 40px;
   margin-left: 25px;
 }
 
+.balancelogo {
+  margin-left: 20px;
+}
+
+.cardlogo {
+  margin-left: 20px;
+}
+
+.ecardlogo {
+  margin-left: 150px;
+}
+
 #footerh {
-  margin-top: 300px;
+  margin-top: 400px;
   display: flex;
   flex-direction: row;
+  margin-left: 150px;
+  font-size: 14px;
 }
 
 #footerp {
   display: flex;
   flex-direction: row;
+  margin-left: 150px;
+  font-size: 14px;
 }
 
 #footernum {
@@ -161,6 +236,7 @@ h1 {
 #footernum:hover {
   text-decoration: none;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 #footerfaq {
