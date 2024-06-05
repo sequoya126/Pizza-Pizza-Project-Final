@@ -1,11 +1,11 @@
 * {
   font-family: Avram, sans-serif;
-  color: #4c3017;
+  /* color: #4c3017; */
 }
 
 body {
   font-family: Avram, sans-serif;
-  color: #4c3017;
+  /* color: #4c3017; */
 }
 
 .logo img {
@@ -42,7 +42,7 @@ header {
 
 /*-----------------top milieu--------------------*/
 #topmilieu {
-
+  color: #4c3017; 
   display: flex;
   flex-direction: row;
   width: 95em;
@@ -50,7 +50,7 @@ header {
 }
 
 #spans {
-
+  color: #4c3017; 
   display: flex;
   flex-direction: row;
   width: 25em;
@@ -63,7 +63,7 @@ header {
 }
 
 #spanclub {
-
+  color: #4c3017; 
   width: 6em;
   margin-right: 1em;
   height: 1em;
@@ -71,7 +71,7 @@ header {
 }
 
 #spangift {
-
+  color: #4c3017; 
   width: 6.52em;
   margin-right: 1em;
   height: 1em;
@@ -79,7 +79,7 @@ header {
 }
 
 #spangroup {
-
+  color: #4c3017; 
   width: 10em;
   margin-right: 1em;
   height: 1em;
@@ -89,7 +89,7 @@ header {
 #divbtn {
   display: flex;
   flex-direction: row;
-
+  color: #4c3017; 
 }
 
 #AddCoupon {
@@ -105,9 +105,11 @@ header {
   margin-right: 1em;
   margin-top: 0.2em;
   margin-bottom: 1.5em;
+  font-weight: 800;
 }
 
 #AddCoupon:hover {
+  
   background-color:
     #d84414;
   color: white;
@@ -122,6 +124,7 @@ header {
 }
 
 #totalsignin {
+  color: #4c3017; 
   display: flex;
   flex-direction: row;
 
@@ -141,6 +144,7 @@ header {
 }
 
 #btn-address {
+  color: #4c3017; 
   display: flex;
   flex-direction: column;
   height: 50px;
@@ -155,6 +159,7 @@ header {
 }
 
 #totaldelivery {
+  color: #4c3017; 
   display: flex;
   flex-direction: row;
 
@@ -166,7 +171,7 @@ header {
   font-weight: 800;
   text-decoration: none;
   word-spacing: 10px;
-
+  color: #4c3017; 
 }
 
 
@@ -176,10 +181,11 @@ header {
   font-weight: 800;
   background-color: white;
   border: none;
-
+  color: #4c3017; 
 }
 
 #createaccount {
+  color: #4c3017; 
   width: 12em;
   text-decoration: none;
   font-size: 0.9em;
@@ -194,13 +200,15 @@ header {
   cursor: pointer;
 
 }
-
+#cellnumer{
+  color: #4c3017; 
+}
 /*------------------fin topmilieu -------------------------*/
 
 /* Code pour le bas  */
 * {
   font-family: Avram, sans-serif;
-  color: #4c3017;
+  /* color: #4c3017; */
 }
 
 body {
@@ -223,11 +231,63 @@ body {
 /*  */
 
 #red{
-  color: red;
+  /* color: red; */
+  color: transparent;
 }
 #whitetext{
   font-size: large;
   font-weight: bold;
-  color: white;
+ 
   background-color: transparent;
+}
+.BtnHome{
+  position: absolute;
+  top: 6.5em;;
+  left: 6.5em;
+  margin: 20px; /* Adjust the margin as needed */
+  color: transparent; 
+  background-color: transparent;
+  border: none;
+
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.BtnRegister, .BtnSignIn{
+  position: absolute;
+  top: 11.5em;;
+  left: 32em;
+  margin: 20px; /* Adjust the margin as needed */
+  border: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 8.2em;
+  height: 2.2em;
+  border-radius: 6%;
+}
+.BtnRegister{
+   margin-left: 5.1em;
+  background-color: white;
+   color: #2f1818;
+}
+.BtnSignIn{
+  color: white;
+  margin-left: 15em;
+background-color:  #d54110;
+}
+#MenuTitle{
+  font-size: large;
+  font-weight: bold;
+  color: #2f1818;
+}
+/*  */
+
+#Bbottom{
+  display: flex;
+  flex-direction: row;
+}
+#Bbottom1{
+  padding-bottom: 5em;
+}
+#Bottom{
+  text-align: center;
 }
