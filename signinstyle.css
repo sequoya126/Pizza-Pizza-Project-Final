@@ -6,6 +6,7 @@
 body {
   font-family: Avram, sans-serif;
   color: #4c3017;
+
 }
 
 .logo img {
@@ -95,14 +96,12 @@ header {
   background-color: white;
   width: 10em;
   height: 2em;
-  padding: 0.3em;
-  border-radius: 0.5em;
+  padding: 0.2em 0.2em;
+  border-radius: 0.3em;
   font-family: Avram, sans-serif;
   color: #4c3017;
   margin-right: 1em;
-  margin-top: 0.2em;
-  margin-bottom: 1.5em;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 #AddCoupon:hover {
@@ -191,19 +190,89 @@ header {
   cursor: pointer;
 
 }
-#backpage{
+
+#backpage {
   display: flex;
   flex-direction: row;
+  margin-left: 150px;
+  margin-top: 50px;
 }
-#back123{
+
+#hsign {
+  margin-left: 510px;
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: -1px;
+}
+
+#back123 {
   text-decoration: none;
   font-weight: 800;
   margin-bottom: 5px;
 }
 
-.material-icons.arrow_back_ios{
+.material-icons.arrow_back_ios {
   font-size: 20px;
 }
-h2{
+
+h2 {
   font-weight: 500;
+}
+
+#emailname,
+#pname {
+  border-bottom: 1px solid #d54110;
+  color: #d54110;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  padding-left: 0;
+  caret-color: #d54110;
+  background-color: transparent;
+  writing-mode: horizontal-tb;
+  width: 450px;
+}
+
+h5 {
+  font-weight: normal;
+  color: #d54110;
+}
+
+.vl {
+  border-left: 1px solid #dbdbdb;
+  height: 400px;
+  margin-top: -300px;
+  margin-left: 780px;
+}
+
+#forgot-password {
+  color: #d54110;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#forgot-password:hover {
+  text-decoration: underline;
+}
+#info-password{
+  display: flex;
+  flex-direction: row;
+}
+#btn-signin{
+  display: flex;
+  flex-direction: row;
+}
+#creataccount2{
+  color: #d54110;
+  text-decoration: none;
+  font-weight: bold;
+}
+.logofooter{
+  margin-top: 100px;
+}
+.logofooter img{
+  margin-top: 100px;
+  width: 100%;
 }
