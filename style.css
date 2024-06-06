@@ -275,6 +275,7 @@ header {
 
 /* Slideshow container */
 .slideshow-container {
+  
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -469,4 +470,16 @@ header {
 #ImageFooter img{
   width: 100%;
   height: auto;
+}
+
+#ImageFooter2 img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.BtnP{
+  background-color: black;
+  color: transparent;
+  height: 10em;
+  width: 10em;
 }

@@ -248,7 +248,7 @@ body {
   color: transparent; 
   background-color: transparent;
   border: none;
-
+cursor: pointer;
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -263,6 +263,7 @@ body {
   width: 8.2em;
   height: 2.2em;
   border-radius: 6%;
+  cursor: pointer;
 }
 .BtnRegister{
    margin-left: 5.1em;
