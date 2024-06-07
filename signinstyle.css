@@ -337,6 +337,11 @@ label {
 #btn-back {
   margin-top: 20px;
 }
-#milieu{
+
+#milieu {
   margin-top: -10px;
+}
+
+input:focus {
+  outline: none;
 }

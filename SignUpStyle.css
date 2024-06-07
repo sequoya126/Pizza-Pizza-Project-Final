@@ -239,3 +239,6 @@ label {
   margin-left: 600px;
   margin-bottom: 130px;
 }
+input:focus{
+  outline: none;
+}
