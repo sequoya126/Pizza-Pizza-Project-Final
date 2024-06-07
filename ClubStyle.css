@@ -11,8 +11,7 @@ body {
 .logo img {
   width: 12em;
   height: 2.4em;
-  margin-right: 150px;
-
+  margin-right: 9em;
 }
 
 .logo img:hover {
@@ -32,7 +31,6 @@ header {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   color: #48311b;
-
 }
 
 #francais:hover {
@@ -59,7 +57,6 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.25em;
-
 }
 
 #spanclub {
@@ -109,9 +106,7 @@ header {
 }
 
 #AddCoupon:hover {
-  
-  background-color:
-    #d84414;
+  background-color: #d84414;
   color: white;
   cursor: pointer;
 }
@@ -119,17 +114,16 @@ header {
 .btn-group {
   display: flex;
   flex-direction: column;
-  height: 50px;
-  width: 110px;
+  height: 3.125em;
+  width: 6.875em;
 }
 
 #totalsignin {
   color: #4c3017; 
   display: flex;
   flex-direction: row;
-
-  height: 40px;
-  margin-left: 20px;
+  height: 2.5em; 
+  margin-left: 1.25em; 
 }
 
 .material-icons {
@@ -147,33 +141,30 @@ header {
   color: #4c3017; 
   display: flex;
   flex-direction: column;
-  height: 50px;
-  width: 160px;
+  height: 3.125em; /* 50px in em */
+  width: 10em; /* 160px in em */
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 0.78em;
-  padding: 5px;
-
+  padding: 0.3125em; 
 }
 
 #totaldelivery {
   color: #4c3017; 
   display: flex;
   flex-direction: row;
-
-  height: 40px;
-  margin-left: 20px;
+  height: 2.5em; 
+  margin-left: 1.25em; 
 }
 
 #address {
   font-weight: 800;
   text-decoration: none;
-  word-spacing: 10px;
+  word-spacing: 0.625em; 
   color: #4c3017; 
 }
-
 
 #signin {
   font-size: 0.78em;
@@ -198,8 +189,8 @@ header {
 #address,
 #cellnumber:hover {
   cursor: pointer;
-
 }
+
 #cellnumer{
   color: #4c3017; 
 }
@@ -213,7 +204,6 @@ header {
 
 body {
   margin: 0;
-
 }
 
 /*  */
@@ -234,29 +224,32 @@ body {
   /* color: red; */
   color: transparent;
 }
+
 #whitetext{
   font-size: large;
   font-weight: bold;
- 
   background-color: transparent;
 }
+
 .BtnHome{
   position: absolute;
-  top: 6.5em;;
+  top: 6.5em;
   left: 6.5em;
-  margin: 20px; /* Adjust the margin as needed */
+  margin: 1.25em; /*  */
   color: transparent; 
   background-color: transparent;
   border: none;
-cursor: pointer;
+  cursor: pointer;
   font-size: 1.5em;
   font-weight: bold;
 }
-.BtnRegister, .BtnSignIn{
+
+.BtnRegister,
+.BtnSignIn{
   position: absolute;
-  top: 11.5em;;
+  top: 11.5em;
   left: 32em;
-  margin: 20px; /* Adjust the margin as needed */
+  margin: 1.25em; /* */
   border: none;
   font-size: 1.5em;
   font-weight: bold;
@@ -265,30 +258,23 @@ cursor: pointer;
   border-radius: 6%;
   cursor: pointer;
 }
+
 .BtnRegister{
-   margin-left: 5.1em;
+  margin-left: 3.1875em; /* 5.1em in em */
   background-color: white;
-   color: #2f1818;
+  color: #2f1818;
 }
+
 .BtnSignIn{
   color: white;
-  margin-left: 15em;
-background-color:  #d54110;
+  margin-left: 9.375em; /* 15em in em */
+  background-color: #d54110;
 }
+
 #MenuTitle{
   font-size: large;
   font-weight: bold;
   color: #2f1818;
 }
-/*  */
 
-#Bbottom{
-  display: flex;
-  flex-direction: row;
-}
-#Bbottom1{
-  padding-bottom: 5em;
-}
-#Bottom{
-  text-align: center;
-}
+/* 
